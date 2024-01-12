@@ -1,0 +1,47 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles for footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 30px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  
+  .footer-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content p {
+    margin-bottom: 20px;
+  }
+  
+  .order-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-button:hover {
+    background-color: #eee;
+  }
+  
