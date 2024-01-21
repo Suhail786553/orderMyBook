@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {Navigate} from 'react-router-dom';
+import './Loginpage.css';
 
 
 const LoginPage = () => {
@@ -22,9 +23,10 @@ const LoginPage = () => {
   }
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '92vh' }}>
+    <div className="container1">
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       {!loggedIn ? (
-        <form style={{ textAlign: 'center', border: '1px black', borderRadius: '11px', padding: '124px',backgroundColor:' rgb(167, 170, 136)' }} onSubmit={handleLogin}>
+        <form style={{ textAlign: 'center', border: '1px black', borderRadius: '11px', padding: '124px',backgroundColor:'white' }} onSubmit={handleLogin}>
           
           <h2 className="login">Login Here</h2>
          
@@ -48,17 +50,24 @@ const LoginPage = () => {
               style={{ padding: '8px', borderRadius: '4px', border: '1px solid black', marginRight: '10px' }}
             />
           </div>
-          <button type="submit" style={{ padding: '10px 20px', borderRadius: '4px', backgroundColor: '#007bff', color: 'white', border: 'none', cursor: 'pointer' }}>
+          <button type="submit" style={{ padding: '10px 20px', borderRadius: '4px', backgroundColor: '#1dd1a1', color: 'black', border: 'none', cursor: 'pointer' }}>
             Login
           </button>
+          <div style={{margin:"12px"}}className="forgot">
+            <h5>Forget Password</h5>
+            <u>Signup</u>
+          </div>
+        
         </form>
       ) : (
         <div>
           <h2>Welcome, {username}!</h2>
           <p>You are logged in.Click Home to go Home Page of Website</p>
+        
         </div>
         
       )}
+    </div>
     </div>
   );
 };
